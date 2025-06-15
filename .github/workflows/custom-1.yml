@@ -23,4 +23,4 @@ jobs:
       - name: Step 2
         run: echo "This is step 2 of job2"
       - name: Step 3
-        run: "Set-ChildItem Env: | Sort-Object Name"
+        run: "Get-ChildItem Env: | Sort-Object Name"
