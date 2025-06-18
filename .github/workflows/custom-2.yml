@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: job 1 - step 1
-              run: echo date
+              run: date
 
     job2:
         name: first job (windows)
@@ -22,7 +22,7 @@ jobs:
         runs-on: macos-latest
         steps:
             - name: job 3 - step 1
-              run: echo date
+              run: date
 
     job4:
         name: first job (final)
@@ -30,4 +30,4 @@ jobs:
         needs: [job1, job2, job3]
         steps:
             - name: job 4 - step 1
-              run: echo date
+              run: date
