@@ -1,26 +1,26 @@
-name: first
+# name: first
 
-on: push
+# on: push
 
-jobs: 
-  job1:
-    name: first job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step 1
-        uses: actions/checkout@v4
-      - name: Step 2
-        run: echo "This is step 2"
-      - name: Step 3
-        run: env | sort
-  job2: 
-    name: second job
-    runs-on: windows-latest
-    # needs: job1
-    steps:
-      - name: Step 1
-        uses: actions/checkout@v4
-      - name: Step 2
-        run: echo "This is step 2 of job2"
-      - name: Step 3
-        run: "Get-ChildItem Env: | Sort-Object Name"
+# jobs: 
+#   job1:
+#     name: first job
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Step 1
+#         uses: actions/checkout@v4
+#       - name: Step 2
+#         run: echo "This is step 2"
+#       - name: Step 3
+#         run: env | sort
+#   job2: 
+#     name: second job
+#     runs-on: windows-latest
+#     # needs: job1
+#     steps:
+#       - name: Step 1
+#         uses: actions/checkout@v4
+#       - name: Step 2
+#         run: echo "This is step 2 of job2"
+#       - name: Step 3
+#         run: "Get-ChildItem Env: | Sort-Object Name"
